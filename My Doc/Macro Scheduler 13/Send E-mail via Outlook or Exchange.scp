@@ -1,0 +1,40 @@
+VBStart
+Function CreateEmail(strRecipient, strSubject, strBody)
+   'Create OL App object
+   Set objOLApp = CreateObject("Outlook.Application")
+
+   If objOLApp is nothing then
+      MsgBox "Could not create OL App.  Shutting Down"
+      Exit Function
+   End If
+
+   'Create a new mail item
+   Set objMsg = objOLApp.CreateItem(0)
+   If objMsg is nothing then
+      MsgBox "Could not create Mail Item.  Shutting Down"
+      Exit Function
+   End If
+
+   'Set basic message parameters
+   objMsg.To = strRecipient
+   objMsg.Subject = strSubject
+   objMsg.Body = strBody
+
+   'Send the message
+   objMsg.Send
+
+   'Free up the space
+   Set objOLApp = Nothing
+   Set objMsg = Nothing
+
+   CreateEmail = "Success"
+End Function
+VBEnd
+
+Input>strTo,Enter Recipient:
+Input>strSubj,Enter Subject:
+Input>strBody,Enter Message:
+
+VBEval>CreateEmail("%strTo%","%strSubj%","%strBody%"),Answer
+
+

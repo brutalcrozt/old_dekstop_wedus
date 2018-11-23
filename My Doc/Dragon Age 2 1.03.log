@@ -1,0 +1,113 @@
+[Tuesday Feb 28 17:30:08 2012] -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[Tuesday Feb 28 17:30:08 2012] |          Dragon Age 2 1.03 patch installer ran
+[Tuesday Feb 28 17:30:08 2012] -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[Tuesday Feb 28 17:30:08 2012] CallParameters=[]
+[Tuesday Feb 28 17:30:08 2012] all mutex checks cleared
+[Tuesday Feb 28 17:30:08 2012] System Default Language ID=1057
+[Tuesday Feb 28 17:30:08 2012] Language [1057] is not supported in this installer - setting English
+[Tuesday Feb 28 17:30:08 2012] Supported OS Language=en
+[Tuesday Feb 28 17:30:08 2012] Program Location from registry=D:\app\game\dragon ace
+[Tuesday Feb 28 17:30:08 2012] Language string code from registry=
+[Tuesday Feb 28 17:30:08 2012] Size required by installer: 44506
+[Tuesday Feb 28 17:30:09 2012] User admin status: Admin
+[Tuesday Feb 28 17:30:09 2012] Program Location=D:\app\game\dragon ace
+[Tuesday Feb 28 17:30:09 2012] Language from registry=en
+[Tuesday Feb 28 17:30:09 2012] Flavour from registry=
+[Tuesday Feb 28 17:30:09 2012] Executable Type=EAAccess
+[Tuesday Feb 28 17:30:09 2012] Current version=1.00
+[Tuesday Feb 28 17:30:09 2012] Detected OS: 7 Service Pack 1
+[Tuesday Feb 28 17:30:09 2012] PageFunction_Welcome_Pre
+[Tuesday Feb 28 17:30:09 2012] Welcome page show
+[Tuesday Feb 28 17:30:11 2012] ConfirmDir page init
+[Tuesday Feb 28 17:30:15 2012] ConfirmDir page Leave
+[Tuesday Feb 28 17:30:15 2012] PageFunction_InstPatchFilesPre
+[Tuesday Feb 28 17:30:15 2012] Main install section
+[Tuesday Feb 28 17:30:15 2012] Extract Saferun & DLL (64 bit)
+[Tuesday Feb 28 17:30:15 2012] Installing Global files...
+[Tuesday Feb 28 17:30:24 2012] Installing executable files...
+[Tuesday Feb 28 17:30:25 2012] +UpdateRegistry start
+[Tuesday Feb 28 17:30:25 2012] -UpdateRegistry end
+[Tuesday Feb 28 17:30:25 2012] UpdateGDF - checking for existing Game Explorer entry
+[Tuesday Feb 28 17:30:25 2012] - no previous Game Explorer entry found
+[Tuesday Feb 28 17:30:25 2012] - adding to Game Explorer
+[Tuesday Feb 28 17:30:25 2012] -- AddToGameExplorer 'D:\app\game\dragon ace\bin_ship\da2gdf.dll' 'D:\app\game\dragon ace'
+[Tuesday Feb 28 17:30:26 2012] - GUID returned={A9AC495D-8CD8-45A7-8D26-70F565415F07}
+[Tuesday Feb 28 17:30:26 2012] - storing GUID in registry
+[Tuesday Feb 28 17:30:26 2012] UpdateGDF complete
+[Tuesday Feb 28 17:30:26 2012] +RunThirdPartyInstallers start
+[Tuesday Feb 28 17:30:26 2012] Running post-inst 3rd party installer - RCCleanup.exe /silent
+[Tuesday Feb 28 17:30:27 2012]  - result: 0
+[Tuesday Feb 28 17:30:27 2012] -RunThirdPartyInstallers end
+[Tuesday Feb 28 17:30:27 2012] -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[Tuesday Feb 28 17:30:27 2012] |           SUCCESS SUCCESS SUCCESS SUCCESS SUCCESS SUCCESS           |
+[Tuesday Feb 28 17:30:27 2012] -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[Tuesday Feb 28 17:30:27 2012] Main install section - END
+[Tuesday Feb 28 17:30:28 2012] PageFunction_FinishPre
+[Tuesday Feb 28 17:30:28 2012] +PageFunction_FinishShow start
+[Tuesday Feb 28 17:30:28 2012] -PageFunction_FinishShow end
+[Tuesday Feb 28 17:30:32 2012] .onGUIEnd
+[Tuesday Feb 28 17:30:32 2012] Unloading plug-ins
+[Tuesday Feb 28 17:30:32 2012] Cleaning up other support files (on next reboot if necessary)
+[Tuesday Feb 28 17:30:32 2012] - C:\Users\dell\AppData\Local\Temp\nss8D81.tmp\GameuxInstallHelper.dll
+[Tuesday Feb 28 17:30:32 2012] - C:\Users\dell\AppData\Local\Temp\nss8D81.tmp\RCCleanup.exe
+[Tuesday Feb 28 17:30:32 2012] -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[Tuesday Feb 28 17:30:32 2012] |          Dragon Age 2 1.03 patch installer finished
+[Tuesday Feb 28 17:30:32 2012] -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+
+[Wednesday Feb 29 19:51:33 2012] -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[Wednesday Feb 29 19:51:33 2012] |          Dragon Age 2 1.03 patch installer ran
+[Wednesday Feb 29 19:51:33 2012] -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[Wednesday Feb 29 19:51:33 2012] CallParameters=[]
+[Wednesday Feb 29 19:51:33 2012] all mutex checks cleared
+[Wednesday Feb 29 19:51:33 2012] System Default Language ID=1057
+[Wednesday Feb 29 19:51:33 2012] Language [1057] is not supported in this installer - setting English
+[Wednesday Feb 29 19:51:33 2012] Supported OS Language=en
+[Wednesday Feb 29 19:51:33 2012] Program Location from registry=D:\app\game\dragon ace
+[Wednesday Feb 29 19:51:33 2012] Language string code from registry=
+[Wednesday Feb 29 19:51:33 2012] Size required by installer: 44506
+[Wednesday Feb 29 19:51:33 2012] User admin status: Admin
+[Wednesday Feb 29 19:51:33 2012] Program Location=D:\app\game\dragon ace
+[Wednesday Feb 29 19:51:33 2012] Language from registry=en
+[Wednesday Feb 29 19:51:34 2012] Flavour from registry=
+[Wednesday Feb 29 19:51:34 2012] Executable Type=EAAccess
+[Wednesday Feb 29 19:51:34 2012] Current version=1.03
+[Wednesday Feb 29 19:51:34 2012] Detected OS: 7 Service Pack 1
+[Wednesday Feb 29 19:51:34 2012] PageFunction_Welcome_Pre
+[Wednesday Feb 29 19:51:34 2012] Welcome page show
+[Wednesday Feb 29 19:51:36 2012] ConfirmDir page init
+[Wednesday Feb 29 19:51:39 2012] ConfirmDir page Leave
+[Wednesday Feb 29 19:51:39 2012] PageFunction_InstPatchFilesPre
+[Wednesday Feb 29 19:51:39 2012] Main install section
+[Wednesday Feb 29 19:51:39 2012] Extract Saferun & DLL (64 bit)
+[Wednesday Feb 29 19:51:40 2012] Installing Global files...
+[Wednesday Feb 29 19:51:49 2012] Installing executable files...
+[Wednesday Feb 29 19:51:51 2012] +UpdateRegistry start
+[Wednesday Feb 29 19:51:51 2012] -UpdateRegistry end
+[Wednesday Feb 29 19:51:51 2012] UpdateGDF - checking for existing Game Explorer entry
+[Wednesday Feb 29 19:51:51 2012] - removing previous Game Explorer entry: {A9AC495D-8CD8-45A7-8D26-70F565415F07}
+[Wednesday Feb 29 19:51:51 2012] - adding to Game Explorer
+[Wednesday Feb 29 19:51:51 2012] -- AddToGameExplorer 'D:\app\game\dragon ace\bin_ship\da2gdf.dll' 'D:\app\game\dragon ace'
+[Wednesday Feb 29 19:51:56 2012] - GUID returned=failedtoadd
+[Wednesday Feb 29 19:51:56 2012] -- AddToGameExplorerA failed
+[Wednesday Feb 29 19:51:56 2012] UpdateGDF complete
+[Wednesday Feb 29 19:51:56 2012] +RunThirdPartyInstallers start
+[Wednesday Feb 29 19:51:57 2012] Running post-inst 3rd party installer - RCCleanup.exe /silent
+[Wednesday Feb 29 19:51:57 2012]  - result: 0
+[Wednesday Feb 29 19:51:57 2012] -RunThirdPartyInstallers end
+[Wednesday Feb 29 19:51:57 2012] -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[Wednesday Feb 29 19:51:57 2012] |           SUCCESS SUCCESS SUCCESS SUCCESS SUCCESS SUCCESS           |
+[Wednesday Feb 29 19:51:57 2012] -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[Wednesday Feb 29 19:51:57 2012] Main install section - END
+[Wednesday Feb 29 19:51:59 2012] PageFunction_FinishPre
+[Wednesday Feb 29 19:51:59 2012] +PageFunction_FinishShow start
+[Wednesday Feb 29 19:51:59 2012] -PageFunction_FinishShow end
+[Wednesday Feb 29 19:52:01 2012] .onGUIEnd
+[Wednesday Feb 29 19:52:01 2012] Unloading plug-ins
+[Wednesday Feb 29 19:52:01 2012] Cleaning up other support files (on next reboot if necessary)
+[Wednesday Feb 29 19:52:01 2012] - C:\Users\dell\AppData\Local\Temp\nsiEF8D.tmp\GameuxInstallHelper.dll
+[Wednesday Feb 29 19:52:01 2012] - C:\Users\dell\AppData\Local\Temp\nsiEF8D.tmp\RCCleanup.exe
+[Wednesday Feb 29 19:52:01 2012] -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+[Wednesday Feb 29 19:52:01 2012] |          Dragon Age 2 1.03 patch installer finished
+[Wednesday Feb 29 19:52:01 2012] -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+

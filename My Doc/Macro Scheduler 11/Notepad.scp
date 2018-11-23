@@ -1,0 +1,52 @@
+//Prompt the user whether to continue or not
+Ask>This script will open Notepad and type in some text.  Continue?,continue
+
+If>continue=YES
+
+   //Run Notepad
+   Run>Notepad.exe
+
+   //Wait for Notepad to be ready
+   WaitWindowOpen>Untitled - Notepad
+
+   //Send some text
+   Send>Hello World
+   Press Enter * 2
+   Wait>1
+
+   //Send some more text
+   Send>I'll now slow down the key send rate for the next line:
+   Press Enter
+
+   //Next line slows down the keysend rate
+   Let>SK_DELAY=50
+   Send>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+
+   //More text and then count up 5 seconds before exit
+   Press Enter * 2
+   Let>SK_DELAY=0
+   Send>I'll exit Notepad in 5 seconds ...
+   Wait>1
+   Send>1
+   Wait>1
+   Send>2
+   Wait>1
+   Send>3
+   Wait>1
+   Send>4
+   Wait>1
+   Send>5
+   Wait>1
+
+   //Send ALT-fx to exit Notepad
+   Press ALT
+   Send>fx
+   Release ALT
+
+   //A confirmation box will appear asking if you want to save changes
+   //It is called "Notepad" and we need to press 'n' to say no.
+   WaitWindowOpen>Notepad
+   Send>n
+
+ENDIF
+

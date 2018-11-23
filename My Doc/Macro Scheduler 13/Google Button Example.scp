@@ -1,0 +1,37 @@
+/*
+View a Tutorial on How to Use Image Recognition:
+http://www.mjtnet.com/blog/2007/02/20/how-to-use-image-recognition/
+
+Don't forget to capture the images and change your paths to the image files ...
+*/
+
+Ask>This is a code example that requires modification before it will run on your PC.%CRLF%To run this example you first need to capture the Google Search button to a bitmap using the Image Capture tool%CRLF%and then open Internet Explorer at www.google.com.  Continue?,Cont
+If>Cont=NO
+  Exit>0
+Endif
+
+//Focus Google
+SetFocus>Google - Microsoft Internet Explorer
+Wait>1
+//Get bounds of window
+GetActiveWindow>title,X,Y,W,H
+
+//Capture the IE Window to a bitmap
+IfFileExists>%SCRIPT_DIR%\screen.bmp
+   DeleteFile>%SCRIPT_DIR%\screen.bmp
+EndIf
+ScreenCapture>X,Y,W,H,%SCRIPT_DIR%\screen.bmp
+
+//I used the capture tool to make googlebutton.bmp and saved it in the script folder
+FindImagePos>%SCRIPT_DIR%\googlebutton.bmp,%SCRIPT_DIR%\screen.bmp,20,1,XArr,YArr,imgs
+If>imgs>0
+   //click on button
+   //remember that x,y returned is relative the image and since we didn't use the
+   //full screen we will need add top left offset to get screen coordinates
+   Let>x=XArr_0+x
+   Let>y=YArr_0+y
+   MouseMove>x,y
+   LClick
+Endif
+
+

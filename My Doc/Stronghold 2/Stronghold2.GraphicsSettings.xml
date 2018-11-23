@@ -1,0 +1,18 @@
+<graphicssettings>
+	<resolution width="1024" height="768" format="X8R8G8B8" refreshRate="60"/>
+	<drawDistance value="1.000000"/>
+	<nPatchLevel value="0.500000"/>
+	<levelOfDetail value="1.000000"/>
+	<modelDetail value="2"/>
+	<textureDetail value="1"/>
+	<drawGroundShadows enabled="true"/>
+	<drawArrowTrails enabled="true"/>
+	<drawParticles enabled="true"/>
+	<drawGrass enabled="true"/>
+	<earlyCulling enabled="false"/>
+	<enhancedWater enabled="true"/>
+	<normalMaps enabled="true"/>
+	<multipassShaders enabled="true"/>
+	<settingsDialog enabled="true"/>
+	<shaderVersion value="3.0"/>
+</graphicssettings>

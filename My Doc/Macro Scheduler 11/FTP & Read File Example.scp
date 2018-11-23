@@ -1,0 +1,22 @@
+MessageModal>This macro will download the version file from MJT Net Ltd's web site using FTP.  You will need to connect to the Internet first.  This macro demonstrates the use of FTPGetFile and ReadLn for reading text files.
+Ask>Are you connected to the Internet?,ruconnected
+If>ruconnected=NO,end
+
+  FTPGetFile>ftp.mjtnet.com,anonymous,anon@mjtnet.com,21,%WIN_DIR%\_msver.txt,/pub/msver.txt,A
+  Let>msg=
+  Let>k=1
+  
+  Label>readfile
+  ReadLn>%WIN_DIR%\_msver.txt,k,line
+  If>line=##EOF##,doneread
+    Let>msg=%msg%%line%
+    Let>msg=%msg%%CRLF%
+    Let>k=k+1
+    Goto>readfile
+  Label>doneread
+
+  MessageModal>%msg% %CRLF%This version is %MSCHED_VER%
+
+Label>end
+
+

@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BioWareApp>
+    <application>
+        <initialization>
+            <init action="condition" value="CheckNewsPatch" delay="5000"/>
+        </initialization>
+        <languagetable>
+            <strings language="en">
+                <string name="LearnMore">Learn More</string>
+                <string name="NewsID">11</string>
+                <string name="ADDIN_DIR">${EXE_DIR}\addins</string>
+            </strings>
+        </languagetable>
+    </application>
+    <actionqueues>
+      <actionqueue name="ShowNewsMarkOfTheAssassin">
+         <action action="page" value="NewsMarkOfTheAssassin"/>
+         <action action="condition" value="CheckNewsPatch" delay="5000" />
+      </actionqueue>
+      <actionqueue name="ShowNewsPatch">
+         <action action="page" value="NewsPatch"/>
+         <action action="condition" value="CheckNewsLegacy" delay="5000" />
+      </actionqueue>
+      <actionqueue name="ShowNewsLegacy">
+         <action action="page" value="NewsLegacy"/>
+         <action action="condition" value="CheckNewsExiledPrince" delay="5000" />
+      </actionqueue>
+      <actionqueue name="ShowNewsExiledPrince">
+         <action action="page" value="NewsExiledPrince"/>
+         <action action="condition" value="CheckNewsItemPack2" delay="5000" />
+      </actionqueue>
+      <actionqueue name="ShowNewsItemPack2">
+         <action action="page" value="NewsItemPack2"/>
+         <action action="condition" value="CheckNewsItemPack" delay="5000" />
+      </actionqueue>
+      <actionqueue name="ShowNewsItemPack">
+         <action action="page" value="NewsItemPack"/>
+         <action action="condition" value="CheckNewsRegister" delay="5000" />
+      </actionqueue>
+      <actionqueue name="ShowNewsRegister">
+         <action action="page" value="NewsRegister"/>
+         <action action="condition" value="CheckNewsBlackEmporium" delay="5000" />
+      </actionqueue>
+      <actionqueue name="ShowNewsBlackEmporium">
+         <action action="page" value="NewsBlackEmporium"/>
+         <action action="condition" value="CheckNewsHires" delay="5000" />
+      </actionqueue>
+      <actionqueue name="ShowNewsHires">
+         <action action="page" value="NewsHires"/>
+         <action action="condition" value="CheckNewsPromo" delay="5000" />
+      </actionqueue>
+      <actionqueue name="ShowNewsPromo">
+         <action action="page" value="NewsPromo"/>
+         <action action="condition" value="CheckNewsMarkOfTheAssassin" delay="5000" />
+      </actionqueue>
+    </actionqueues>
+    <conditions>
+      <condition name="CheckNewsMarkOfTheAssassin" type="FileExist" file="${ADDIN_DIR}\da2_prc_eye\manifest.xml">
+         <true action="condition" value="CheckNewsPatch"/>
+         <false action="actionqueue" value="ShowNewsMarkOfTheAssassin"/>
+      </condition>
+      <condition name="CheckNewsPatch" type="FileExist" file="${EXE_DIR}\bin_ship\DragonAge2.exe">
+         <true action="actionqueue" value="ShowNewsPatch"/>
+         <false action="actionqueue" value="ShowNewsPatch"/>
+      </condition>
+      <condition name="CheckNewsLegacy" type="FileExist" file="${ADDIN_DIR}\da2_prc_drk\manifest.xml">
+         <true action="condition" value="CheckNewsExiledPrince"/>
+         <false action="actionqueue" value="ShowNewsLegacy"/>
+      </condition>
+      <condition name="CheckNewsExiledPrince" type="FileExist" file="${ADDIN_DIR}\da2_prc_seb\manifest.xml">
+         <true action="condition" value="CheckNewsItemPack2"/>
+         <false action="actionqueue" value="ShowNewsExiledPrince"/>
+      </condition>
+      <condition name="CheckNewsItemPack2" type="FileExist" file="${ADDIN_DIR}\da2_mtx_001\manifest.xml">
+         <true action="condition" value="CheckNewsItemPack2_002"/>
+         <false action="actionqueue" value="ShowNewsItemPack2"/>
+      </condition>
+      <condition name="CheckNewsItemPack2_002" type="FileExist" file="${ADDIN_DIR}\da2_mtx_002\manifest.xml">
+         <true action="condition" value="CheckNewsItemPack2_003"/>
+         <false action="actionqueue" value="ShowNewsItemPack2"/>
+      </condition>
+      <condition name="CheckNewsItemPack2_003" type="FileExist" file="${ADDIN_DIR}\da2_mtx_003\manifest.xml">
+         <true action="condition" value="CheckNewsItemPack"/>
+         <false action="actionqueue" value="ShowNewsItemPack2"/>
+      </condition>
+      <condition name="CheckNewsItemPack" type="FileExist" file="${ADDIN_DIR}\da2_mtx_mag\manifest.xml">
+         <true action="condition" value="CheckNewsItemPack_002"/>
+         <false action="actionqueue" value="ShowNewsItemPack"/>
+      </condition>
+      <condition name="CheckNewsItemPack_002" type="FileExist" file="${ADDIN_DIR}\da2_mtx_rog\manifest.xml">
+         <true action="condition" value="CheckNewsItemPack_003"/>
+         <false action="actionqueue" value="ShowNewsItemPack"/>
+      </condition>
+      <condition name="CheckNewsItemPack_003" type="FileExist" file="${ADDIN_DIR}\da2_mtx_war\manifest.xml">
+         <true action="condition" value="CheckNewsRegister"/>
+         <false action="actionqueue" value="ShowNewsItemPack"/>
+      </condition>
+      <condition name="CheckNewsRegister" type="FileExist" file="${EXE_DIR}\bin_ship\DragonAge2.exe">
+         <true action="actionqueue" value="ShowNewsRegister"/>
+         <false action="actionqueue" value="ShowNewsRegister"/>
+      </condition>
+      <condition name="CheckNewsBlackEmporium" type="FileExist" file="${ADDIN_DIR}\da2_prc_one\manifest.xml">
+         <true action="condition" value="CheckNewsHires"/>
+         <false action="actionqueue" value="ShowNewsBlackEmporium"/>
+      </condition>
+      <condition name="CheckNewsHires" type="FileExist" file="${EXE_DIR}\packages\core\textures\high\highrescharacterartfp.erf">
+         <true action="condition" value="CheckNewsPromo"/>
+         <false action="actionqueue" value="ShowNewsHires"/>
+      </condition>
+      <condition name="CheckNewsPromo" type="FileExist" file="${ADDIN_DIR}\da2_prc_col\manifest.xml">
+         <true action="condition" value="CheckNewsMarkOfTheAssassin"/>
+         <false action="actionqueue" value="ShowNewsPromo"/>
+      </condition>
+    </conditions>
+    <pages default="NewsMarkOfTheAssassin">
+        <page name="NewsMarkOfTheAssassin" background="${NEWS_DIR}\assassin_${Language}.bmp">
+            <xmlbutton name="LearnMore" action="URL" value="http://social.bioware.com/page/da2-dlc">
+                <position x="0" y="0" />
+                <size width="734" height="110" />
+            </xmlbutton>
+        </page>
+        <page name="NewsPatch" background="${NEWS_DIR}\patch_${Language}.bmp">
+            <xmlbutton name="LearnMore" action="URL" value="http://social.bioware.com/page/da2-patches">
+                <position x="445" y="70" />
+                <size width="250" height="30" />
+            </xmlbutton>
+        </page>
+        <page name="NewsLegacy" background="${NEWS_DIR}\legacy_${Language}.bmp">
+            <xmlbutton name="LearnMore" action="URL" value="http://social.bioware.com/page/da2-dlc">
+                <position x="0" y="0" />
+                <size width="734" height="110" />
+            </xmlbutton>
+        </page>
+        <page name="NewsExiledPrince" background="${NEWS_DIR}\exiledprince_pc_${Language}.bmp">
+            <xmlbutton name="LearnMore" action="URL" value="http://social.bioware.com/page/da2-dlc">
+                <position x="0" y="0" />
+                <size width="734" height="110" />
+            </xmlbutton>
+        </page>
+        <page name="NewsItemPack2" background="${NEWS_DIR}\itempack2_${Language}.bmp">
+            <xmlbutton name="LearnMore" action="URL" value="http://social.bioware.com/page/da2-dlc">
+                <position x="0" y="0" />
+                <size width="734" height="110" />
+            </xmlbutton>
+        </page>
+        <page name="NewsItemPack" background="${NEWS_DIR}\itempack_${Language}.bmp">
+            <xmlbutton name="LearnMore" action="URL" value="http://social.bioware.com/page/da2-dlc">
+                <position x="0" y="0" />
+                <size width="734" height="110" />
+            </xmlbutton>
+        </page>
+        <page name="NewsRegister" background="${NEWS_DIR}\maingame_register_${Language}.bmp">
+            <xmlbutton name="LearnMore" action="URL" value="http://go.bioware.com/dragonage2/pc/launcher/register/${Language}">
+                <position x="0" y="0" />
+                <size width="734" height="110" />
+            </xmlbutton>
+        </page>
+        <page name="NewsBlackEmporium" background="${NEWS_DIR}\blackemp_${Language}.bmp">
+            <xmlbutton name="LearnMore" action="URL" value="http://social.bioware.com/page/da2-dlc">
+                <position x="0" y="0" />
+                <size width="734" height="110" />
+            </xmlbutton>
+        </page>
+        <page name="NewsHires" background="${NEWS_DIR}\hires_${Language}.bmp">
+            <xmlbutton name="LearnMore" action="URL" value="http://social.bioware.com/page/da2-patches">
+                <position x="495" y="74" />
+                <size width="239" height="30" />
+            </xmlbutton>
+        </page>
+        <page name="NewsPromo" background="${NEWS_DIR}\dal_promo_${Language}.bmp">
+            <xmlbutton name="LearnMore" action="URL" value="http://apps.facebook.com/dragonagelegends/?amp;kt_type=partner&amp;kt_st1=cp&amp;kt_st2=da2pcl&amp;kt_st3=da2pcl">
+                <position x="0" y="0" />
+                <size width="734" height="110" />
+            </xmlbutton>
+        </page>
+    </pages>
+</BioWareApp>

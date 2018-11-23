@@ -1,0 +1,12 @@
+GetScreenRes>screen_x,screen_y
+ScreenCapture>0,0,screen_x,screen_y,d:\screen1.bmp
+
+Let>match=0
+Repeat>match
+       ScreenCapture>0,0,screen_x,screen_y,d:\screen2.bmp
+	   CompareBitmaps>d:\screen1.bmp,d:\screen2.bmp,match
+       Wait>0.2
+Until>match<90
+MessageModal>We have a new screen ...
+
+

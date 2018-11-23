@@ -1,0 +1,20 @@
+MessageModal>This macro demonstrates how to send Email & Files using the SMTPSendMail command.
+Input>smtp,Please Enter Your SMTP Mail Server:
+If>smtp=,end
+Input>fromname,Please Enter Your Name:
+If>fromname=,end
+Input>fromemail,Please Enter Your Email Address:
+If>fromemail=,end
+Input>toemail,Please Enter Recipient's Email Address:
+If>toemail=,end
+Input>subject,Please Enter a Subject:
+Input>msg,Please Enter Your Message:
+Ask>Do you want to send a file?,sendfile
+Let>attach=
+If>sendfile=NO,continue
+Input>attach,Please browse for the file you want to send
+Label>continue
+SMTPSendMail>toemail,smtp,fromemail,fromemail,subject,%msg%,attach
+MessageModal>SMTP_RESULT
+Label>end
+

@@ -1,0 +1,30 @@
+VBSTART
+
+Function MultiplyNums (d,a)
+	
+	MultiplyNums = d * a
+
+End Function
+
+Sub DisplayMessage (msg)
+
+	MsgBox msg
+
+End Sub
+
+Function GetName
+
+	GetName = InputBox("Enter Your Name : ")
+
+End Function
+
+VBEND
+
+Let>a=5
+VBEval>MultiplyNums(%a%,2),answer
+MessageModal>answer
+
+VBRun>DisplayMessage,Hello World
+
+VBEval>GetName,name
+MessageModal>Your Name is : %name%

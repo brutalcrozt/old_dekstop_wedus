@@ -1,0 +1,62 @@
+/*
+IGNORING SPACES
+
+By default, spaces are seen as regular characters and are included 
+in variable assignments.  E.g. The following line..
+
+Let>a = 5 
+
+..would create a variable called "a " with the value " 5".  
+
+Normally, therefore, you should use:
+
+Let>a=5
+
+But experienced programmers are used to the language ignoring spaces.  
+This can be achieved by setting IGNORESPACES to 1:
+
+Let>IGNORESPACES=1 
+Let>a = 5
+
+This would set variable "a" to the value 5.  
+
+If spaces are ignored then strings that need preceding spaces will need 
+to be delimited.  To do this use {"string"} 
+
+Try stepping through the examples below with the Debugger and Watch List open.   
+*/
+
+Let>VAREXPLICIT=1
+Let>IGNORESPACES=1
+
+Let>a = 5
+Let>b = 22
+
+Input>c, Enter a number:, 0
+If> %c% > 0
+  Let> d = {%a% + %b% * %c%}
+Else
+  Let> d = {%a% * %b%}
+Endif
+MessageModal> Answer: %d%
+
+//With IGNORESPACES=1 do the following if you want leading/trailing spaces in a string
+Let>string_with_spaces = {"  I want preceeding spaces  "}
+MessageModal> %string_with_spaces%
+
+//Or just switch IGNORESPACES off and on
+Let>IGNORESPACES=0
+MessageModal>  Need these leading spaces
+Let>IGNORESPACES=1
+
+//Inline Expressions:
+MessageModal>{"  I want preceeding spaces"}
+
+//Sum:
+MessageModal>{5 + 4}
+
+//Embed a complex expression within the string as you would a variable:
+MessageModal>W Pos: %{Pos("W","Hello World")}%
+
+
+

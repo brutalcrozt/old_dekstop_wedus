@@ -1,0 +1,53 @@
+//Specify the path of the Excel file here
+Let>filename=%SCRIPT_DIR%\example.xls
+
+IfFileExists>filename
+
+   //Start Excel
+   ExecuteFile>filename
+   WaitWindowOpen>Microsoft Excel -*
+
+   //Ask how many rows we should get
+   Input>maxrows,How many rows shall I get?,200
+
+   //As an example I'm going to paste the data into Notepad
+   Run>Notepad.exe
+   WaitWindowOpen>Untitled - Notepad
+
+   Let>r=2
+   Repeat>r
+      //get the fields for this row
+      DDERequest>Excel,filename,R%r%C1,field_1,60
+      DDERequest>Excel,filename,R%r%C2,field_2,60
+      DDERequest>Excel,filename,R%r%C3,field_3,60
+      DDERequest>Excel,filename,R%r%C4,field_4,60
+
+      //remove the CRLF that Excel adds
+      StringReplace>field_1,CRLF,,field_1
+      StringReplace>field_2,CRLF,,field_2
+      StringReplace>field_3,CRLF,,field_3
+      StringReplace>field_4,CRLF,,field_4
+
+      //For this example we'll just paste each row into Notepad
+      SetFocus>Notepad*
+      Send>Row: %r%
+      Press Tab
+      Send>%field_1%
+      Press Tab
+      Send>%field_2%
+      Press Tab
+      Send>%field_3%
+      Press Tab
+      Send>%field_4%
+      Press Enter
+      //you'll want to replace the above lines to send the data to your real app.
+
+      Let>r=r+1
+	  Wait>0.05
+   Until>r=maxrows
+
+Else
+  MessageModal>Could not find: %filename%
+Endif
+
+

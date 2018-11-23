@@ -1,0 +1,37 @@
+Dialog>MyDialog
+  Caption=This is My Dialog
+  Left=300
+  Top=300
+  Width=305
+  Height=120
+  Label=Type Something Here:,5,5
+  Edit=MyEdit,5,22,230,Type Something Here and Press 'Display'
+  Button=Display,240,22,50,20,3
+  Button=Exit Macro,5,50,100,20,2
+  //Use Memos for multiline edits
+  //Memo=MyEdit2,80,80,200,200,dd
+  CheckBox=MyCheckBox,Play Chimes?,130,50,90,False
+EndDialog>MyDialog
+
+Label>MainLoop
+  Show>MyDialog,result
+  If>result=2,End
+  If>result=3,SayHello
+  if>MyDialog.MyCheckBox=True,PlayWav
+Goto>MainLoop
+
+SRT>SayHello
+			MessageModal>%MyDialog.MyEdit%
+END>SayHello
+
+SRT>PlayWav
+		   PlayWav>Chimes.wav
+End>PlayWav
+
+Label>End
+
+
+
+
+
+

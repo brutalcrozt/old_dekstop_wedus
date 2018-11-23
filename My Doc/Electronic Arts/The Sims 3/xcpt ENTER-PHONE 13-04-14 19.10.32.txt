@@ -1,0 +1,168 @@
+[Build info]
+Application: Sims3
+BuildTime:   2009-04-22-1936
+BuildUser:   codebuilder
+BuildHost:   SIMS-BUILD108
+BuildConfig: Release
+BuldVersion: 0.0.0.11190
+Commandline: D:\app\game\sim 3 non basic game\The Sims 3\Game\Bin\TS3.exe
+
+
+[System info]
+Computer name: ENTER-PHONE
+Computer DNS name: enter-phone
+User name: dell
+EA_PLATFORM: Windows on X86
+OS name: Windows Vista
+OS version number: 6.0.6000
+OS service pack: 
+Debugger present: no
+CPU count: 4
+Processor type: x86
+Processor level: 6
+Processor revision: 10759
+Memory load: 60%
+Total physical memory: 4003 Mb
+Available physical memory: 1565 Mb
+Total page file memory: 8005 Mb
+Available page file memory: 4411 Mb
+Total virtual memory: 2047 Mb
+Free virtual memory: 1917 Mb
+
+[Application info]
+Language: C++
+Compiler: Microsoft Visual C++ compiler, version 1400
+App path: D:\app\game\sim 3 non basic game\The Sims 3\Game\Bin\TS3.exe
+App version: 0.0.0.11190
+
+[Exception info]
+date: 2013-04-14
+time: 19.10.32
+type: ACCESS_VIOLATION reading address 0x00000003
+address: 0x00a1eb13 "D:\app\game\sim 3 non basic game\The Sims 3\Game\Bin\TS3.exe":0x0001:0x0061db13
+
+[Call stack]
+Callstack not available
+
+[Stack data]
+0256ec30 | 13 eb a1 00<10>23 c4 04 bc fe 56 02 f0 22 c4 04 | .....#....V..".. |
+0256ec40 | 00 00 00 00 b0 f3 c4 04 1a f4 c4 04 1c f4 c4 04 | ................ |
+0256ec50 | 90 43 d8 00 44 ed 56 00 10 13 c5 04 28 13 c5 04 | .C..D.V.....(... |
+0256ec60 | 40 13 c5 04 90 43 d8 00 00 00 00 00 00 00 00 00 | @....C.......... |
+0256ec70 | 02 00 00 00 40 59 c5 04 20 6e c5 04 98 6e c5 04 | ....@Y.. n...n.. |
+0256ec80 | e0 6e c5 04 10 49 d8 00 9a 38 fd 76 10 16 27 00 | .n...I...8.v..'. |
+0256ec90 | 50 01 27 00 10 16 27 00 00 00 00 00 50 01 27 00 | P.'...'.....P.'. |
+0256eca0 | 00 00 27 00 00 00 00 00 74 2b ec 00 74 2b ec 00 | ..'.....t+..t+.. |
+0256ecb0 | 76 2b ec 00 90 43 d8 00 08 00 00 00 a9 00 00 a9 | v+...C.......... |
+0256ecc0 | 08 00 00 00 03 00 00 00 00 00 27 00 80 00 00 00 | ..........'..... |
+0256ecd0 | e4 ec 56 02 e4 ec 56 02 64 ed 56 02 f0 bd ce 00 | ..V...V.d.V..... |
+0256ece0 | e4 ec 56 02 00 00 2c 00 08 00 00 00 30 2d 2c 00 | ..V...,.....0-,. |
+0256ecf0 | 50 01 27 00 00 50 27 00 00 00 00 00 d8 4f 27 00 | P.'..P'......O'. |
+0256ed00 | 00 00 00 00 d8 4f 27 00 00 11 27 00 10 16 27 00 | .....O'...'...'. |
+0256ed10 | 1c ed 56 02 08 00 00 00 00 00 00 00 2c ed 00 01 | ..V.........,... |
+0256ed20 | 00 00 00 00 40 00 00 00 f0 74 01 01 64 ec 56 02 | ....@....t..d.V. |
+0256ed30 | dd 46 fd 76 94 ed 56 02 d5 71 01 77 98 44 f3 03 | .F.v..V..q.w.D.. |
+0256ed40 | fe ff ff ff 9a 38 fd 76 92 34 fd 76 00 00 00 00 | .....8.v.4.v.... |
+0256ed50 | 00 11 27 00 00 11 27 00 1c 11 27 00 00 00 00 00 | ..'...'...'..... |
+0256ed60 | f8 10 27 00 a4 ed 56 02 a9 a4 f1 75 00 00 27 00 | ..'...V....u..'. |
+0256ed70 | 00 00 00 00 e8 a4 f1 75 e9 0a 4a 23 48 f2 56 02 | .......u..J#H.V. |
+0256ed80 | 50 1b c5 04 00 00 00 00 80 81 00 00 fa 1b c5 04 | P............... |
+0256ed90 | d1 63 56 72 fa 1b c5 04 20 64 5a 72 48 f2 56 02 | .cVr.... dZrH.V. |
+0256eda0 | 50 1b c5 04 52 71 56 72 20 00 00 00 50 1b c5 04 | P...RqVr ...P... |
+0256edb0 | 00 00 00 00 50 1b c5 04 a6 71 56 72 03 00 00 00 | ....P....qVr.... |
+0256edc0 | 3c 5b 3a 7f 15 ea cd 01 dd 07 01 00 05 00 04 00 | <[:............. |
+0256edd0 | 00 00 32 00 1f 00 4f 01 00 11 27 00 20 00 00 00 | ..2...O...'. ... |
+0256ede0 | 3c 83 db d2 da e9 cd 01 3c 83 db d2 da e9 cd 01 | <.......<....... |
+0256edf0 | 27 af 40 d3 da e9 cd 01 00 00 00 00 0d 63 00 00 | '.@..........c.. |
+0256ee00 | 00 00 00 00 fc 2f 00 00 78 00 63 00 70 00 74 00 | ...../..x.c.p.t. |
+0256ee10 | 20 00 45 00 4e 00 54 00 45 00 52 00 2d 00 50 00 |  .E.N.T.E.R.-.P. |
+0256ee20 | 48 00 4f 00 4e 00 45 00 20 00 31 00 33 00 2d 00 | H.O.N.E. .1.3.-. |
+0256ee30 | 30 00 31 00 2d 00 30 00 34 00 20 00 30 00 30 00 | 0.1.-.0.4. .0.0. |
+
+[Instruction data]
+00a1ea93 => DasmX86Dll.dll not found. 
+
+[Registers]
+eip: 00a1eb13
+eax: 00000003
+ebx: 00ec2b76
+ecx: 00e4991c
+edx: ffffffff
+esi: 00ec2b74
+edi: 00d84390
+ebp: 00000000
+efl: 00010216
+esp: 0256ec34
+
+[Modules]
+base 0x00400000 size 0x01c61ec8 entry 0x02060b4e "TS3.exe"                                        "D:\app\game\sim 3 non basic game\The Sims 3\Game\Bin\TS3.exe"
+base 0x76fa0000 size 0x00180000 entry 0x00000000 "ntdll.dll"                                      "C:\Windows\SysWOW64\ntdll.dll"
+base 0x75470000 size 0x00110000 entry 0x754832b3 "kernel32.dll"                                   "C:\Windows\syswow64\kernel32.dll"
+base 0x75f00000 size 0x00047000 entry 0x75f074b1 "KERNELBASE.dll"                                 "C:\Windows\syswow64\KERNELBASE.dll"
+base 0x6eb60000 size 0x001c3000 entry 0x6eb61a45 "d3d9.dll"                                       "C:\Windows\system32\d3d9.dll"
+base 0x75a30000 size 0x000ac000 entry 0x75a3a472 "msvcrt.dll"                                     "C:\Windows\syswow64\msvcrt.dll"
+base 0x74cf0000 size 0x00019000 entry 0x74cf4975 "sechost.dll"                                    "C:\Windows\SysWOW64\sechost.dll"
+base 0x74bb0000 size 0x000f0000 entry 0x74bc0569 "RPCRT4.dll"                                     "C:\Windows\syswow64\RPCRT4.dll"
+base 0x74b00000 size 0x00060000 entry 0x74b1a3b3 "SspiCli.dll"                                    "C:\Windows\syswow64\SspiCli.dll"
+base 0x74af0000 size 0x0000c000 entry 0x74af10e1 "CRYPTBASE.dll"                                  "C:\Windows\syswow64\CRYPTBASE.dll"
+base 0x75590000 size 0x00100000 entry 0x755ab6ed "USER32.dll"                                     "C:\Windows\syswow64\USER32.dll"
+base 0x75690000 size 0x00090000 entry 0x756a6343 "GDI32.dll"                                      "C:\Windows\syswow64\GDI32.dll"
+base 0x75110000 size 0x0000a000 entry 0x751136a0 "LPK.dll"                                        "C:\Windows\syswow64\LPK.dll"
+base 0x74db0000 size 0x0009d000 entry 0x74de3fd7 "USP10.dll"                                      "C:\Windows\syswow64\USP10.dll"
+base 0x74d10000 size 0x000a0000 entry 0x74d249e5 "ADVAPI32.dll"                                   "C:\Windows\syswow64\ADVAPI32.dll"
+base 0x71c70000 size 0x00009000 entry 0x71c71220 "VERSION.dll"                                    "C:\Windows\system32\VERSION.dll"
+base 0x73bf0000 size 0x00006000 entry 0x73bf11f0 "d3d8thk.dll"                                    "C:\Windows\system32\d3d8thk.dll"
+base 0x737f0000 size 0x00013000 entry 0x737f1d3f "dwmapi.dll"                                     "C:\Windows\system32\dwmapi.dll"
+base 0x02570000 size 0x00267000 entry 0x0278af6c "d3dx9_31.dll"                                   "C:\Windows\system32\d3dx9_31.dll"
+base 0x6a6c0000 size 0x000e7000 entry 0x6a6c1771 "DDRAW.dll"                                      "C:\Windows\system32\DDRAW.dll"
+base 0x73bd0000 size 0x00006000 entry 0x73bd1250 "DCIMAN32.dll"                                   "C:\Windows\system32\DCIMAN32.dll"
+base 0x75d60000 size 0x0019d000 entry 0x75d617e7 "SETUPAPI.dll"                                   "C:\Windows\syswow64\SETUPAPI.dll"
+base 0x75ca0000 size 0x00027000 entry 0x75ca58b9 "CFGMGR32.dll"                                   "C:\Windows\syswow64\CFGMGR32.dll"
+base 0x75be0000 size 0x0008f000 entry 0x75be3fb1 "OLEAUT32.dll"                                   "C:\Windows\syswow64\OLEAUT32.dll"
+base 0x75120000 size 0x0015c000 entry 0x7516ba3d "ole32.dll"                                      "C:\Windows\syswow64\ole32.dll"
+base 0x75810000 size 0x00012000 entry 0x75811441 "DEVOBJ.dll"                                     "C:\Windows\syswow64\DEVOBJ.dll"
+base 0x75f50000 size 0x00c4a000 entry 0x75fd1621 "SHELL32.dll"                                    "C:\Windows\syswow64\SHELL32.dll"
+base 0x750b0000 size 0x00057000 entry 0x750c9ba6 "SHLWAPI.dll"                                    "C:\Windows\syswow64\SHLWAPI.dll"
+base 0x72540000 size 0x0009b000 entry 0x7254232b "MSVCR80.dll"                                    "C:\Windows\WinSxS\x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.6195_none_d09154e044272b9a\MSVCR80.dll"
+base 0x757b0000 size 0x00060000 entry 0x757c158f "IMM32.dll"                                      "C:\Windows\syswow64\IMM32.dll"
+base 0x74fe0000 size 0x000cc000 entry 0x74fe168b "MSCTF.dll"                                      "C:\Windows\syswow64\MSCTF.dll"
+base 0x6a5d0000 size 0x000eb000 entry 0x6a5d13ce "dbghelp.dll"                                    "C:\Windows\system32\dbghelp.dll"
+base 0x75580000 size 0x00005000 entry 0x75581438 "PSAPI.DLL"                                      "C:\Windows\syswow64\PSAPI.DLL"
+base 0x723f0000 size 0x00011000 entry 0x723f1300 "NETAPI32.dll"                                   "C:\Windows\system32\NETAPI32.dll"
+base 0x723e0000 size 0x00009000 entry 0x723e15a6 "netutils.dll"                                   "C:\Windows\system32\netutils.dll"
+base 0x723c0000 size 0x00019000 entry 0x723c1319 "srvcli.dll"                                     "C:\Windows\system32\srvcli.dll"
+base 0x723b0000 size 0x0000f000 entry 0x723b12a1 "wkscli.dll"                                     "C:\Windows\system32\wkscli.dll"
+base 0x74b60000 size 0x00035000 entry 0x74b6145d "WS2_32.dll"                                     "C:\Windows\syswow64\WS2_32.dll"
+base 0x74ba0000 size 0x00006000 entry 0x74ba1782 "NSI.dll"                                        "C:\Windows\syswow64\NSI.dll"
+base 0x6ede0000 size 0x00072000 entry 0x6ede1576 "DSOUND.dll"                                     "C:\Windows\system32\DSOUND.dll"
+base 0x72420000 size 0x00032000 entry 0x724237f1 "WINMM.dll"                                      "C:\Windows\system32\WINMM.dll"
+base 0x736a0000 size 0x00025000 entry 0x736a2b71 "POWRPROF.dll"                                   "C:\Windows\system32\POWRPROF.dll"
+base 0x71e60000 size 0x00007000 entry 0x71e61120 "WSOCK32.dll"                                    "C:\Windows\system32\WSOCK32.dll"
+base 0x722c0000 size 0x0004c000 entry 0x722c2c14 "apphelp.dll"                                    "C:\Windows\system32\apphelp.dll"
+base 0x71eb0000 size 0x0008d000 entry 0x71eb1fff "AcLayers.DLL"                                   "C:\Windows\AppPatch\AcLayers.DLL"
+base 0x72710000 size 0x00017000 entry 0x72711c9d "USERENV.dll"                                    "C:\Windows\system32\USERENV.dll"
+base 0x72460000 size 0x0000b000 entry 0x72461992 "profapi.dll"                                    "C:\Windows\system32\profapi.dll"
+base 0x725e0000 size 0x00051000 entry 0x7260988c "WINSPOOL.DRV"                                   "C:\Windows\system32\WINSPOOL.DRV"
+base 0x71e90000 size 0x00012000 entry 0x71e91200 "MPR.dll"                                        "C:\Windows\system32\MPR.dll"
+base 0x73a60000 size 0x00080000 entry 0x73a737c9 "uxtheme.dll"                                    "C:\Windows\system32\uxtheme.dll"
+base 0x00240000 size 0x00016000 entry 0x0024801f "xinput1_3.dll"                                  "C:\Windows\system32\xinput1_3.dll"
+base 0x73b70000 size 0x00022000 entry 0x73b7b13c "glu32.dll"                                      "C:\Windows\system32\glu32.dll"
+base 0x6ee60000 size 0x000c8000 entry 0x6eefb0e4 "OPENGL32.dll"                                   "C:\Windows\system32\OPENGL32.dll"
+
+[Register memory]
+ebx 00ec2b70 |                  <00>00 00 00 00 00 00 00 00 00 |       .......... |
+    00ec2b80 | 4c 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | L............... |
+    00ec2b90 | 00 00 00 00 00 00                               | ......           |
+ecx 00e49910 |                                    <ff>ff ff ff |             .... |
+    00e49920 | 1e 00 00 00 fe ff ff ff 18 32 d0 00 a8 33 d0 00 | .........2...3.. |
+    00e49930 | 90 33 d0 00 80 33 d0 00 68 33 d0 00             | .3...3..h3..     |
+Memory pointer appears to point to invalid memory.
+esi 00ec2b70 |            <00>00 00 00 00 00 00 00 00 00 00 00 |     ............ |
+    00ec2b80 | 4c 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 | L............... |
+    00ec2b90 | 00 00 00 00                                     | ....             |
+edi 00d84390 |<57>6f 72 6c 64 2f 57 6f 72 6c 64 55 74 69 6c 73 | World/WorldUtils |
+    00d843a0 | 00 00 00 00 24 00 45 00 58 00 45 00 00 00 00 00 | ....$.E.X.E..... |
+
+[Extra]
+(none)
+

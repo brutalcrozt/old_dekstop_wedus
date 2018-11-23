@@ -1,0 +1,66 @@
+/*
+View a Tutorial on How to Use Image Recognition:
+http://www.mjtnet.com/blog/2007/02/20/how-to-use-image-recognition/
+
+Don't forget to capture the images and change your paths to the image files ...
+*/
+
+Ask>This is a code example that requires modification before it will run on your PC.  Please view the code before running.  Continue?,Cont
+If>Cont=NO
+  Exit>0
+Endif
+
+VBSTART
+Sub OpenPage(URL,Wait)
+  Dim IE
+  Set IE = CreateObject("InternetExplorer.Application")
+  IE.visible = 1
+  IE.navigate URL
+  do while IE.Busy and Wait
+  loop
+End Sub
+VBEND
+
+//Go to the flash password example at Webwasp.co.uk
+VBRun>OpenPage,http://www.webwasp.co.uk/flash-sample-movies/04-password/index.php,1
+WaitReady>0
+SetFocus>Flash Tutorial: - webwasp.co.uk*
+
+//Maximise IE
+GetActiveWindow>title,X,Y
+WindowAction>1,title
+
+//Normally we can't automate clicking on flash buttons because they are only images.
+//Now we can use FindImgPos to locate the flash button ...
+
+//I have used the Image Capture tool to extract the password edit box and the edit button to bitmaps:
+Let>editbox=d:\passwordedit.bmp
+Let>enterbutton=d:\enterbutton.bmp
+
+//Find the password box on the screen
+FindImagePos>editbox,SCREEN,20,1,XPos,YPos,imgs
+
+If>imgs>0
+  //Click in box
+  MouseMove>XPos_0,YPos_0
+  LClick
+  LClick
+  Wait>0.5
+  //Enter a password
+  Send>letmein
+Endif
+
+//Find the password box on the screen
+FindImagePos>enterbutton,SCREEN,20,1,XPos,YPos,imgs
+If>imgs>0
+  //Click on button
+  MouseMove>XPos_0,YPos_0
+  LClick
+Endif
+
+
+
+
+
+
+

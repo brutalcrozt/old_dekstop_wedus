@@ -1,0 +1,41 @@
+//Put this VBSTART..VBEND block at top of script
+//to declare the functions once
+VBSTART
+Dim xlApp
+Dim xlBook
+
+'Opens the Excel file in Excel
+Sub OpenExcelFile(filename)
+  Set xlApp = CreateObject("Excel.Application")
+  xlApp.visible = true
+  Set xlBook = xlApp.Workbooks.open(filename)
+end sub
+
+'Use this to close Excel later
+Sub CloseExcel
+   xlApp.quit
+   Set xlApp = Nothing
+End Sub
+
+'Retrieves a cell value from the specified
+'worksheet
+Function GetCell(Sheet,Row,Column)
+  Dim xlSheet
+  Set xlSheet = xlBook.Worksheets(Sheet)
+  GetCell = xlSheet.Cells(Row, Column).Value
+End Function
+
+'Sets specified cell of specified worksheet
+Function SetCell(Sheet,Row,Column,NewValue)
+  Dim xlSheet
+  Set xlSheet = xlBook.Worksheets(Sheet)
+  xlSheet.Cells(Row,Column).Value = NewValue
+End Function
+VBEND
+
+//Do the business
+VBRun>OpenExcelFile,%SCRIPT_DIR%\example.xls
+VBEval>GetCell("Sheet1",5,4),theValue
+MessageModal>Cell value: %thevalue%
+VBEval>SetCell("Sheet1",28,2,998),nul
+//VBRun>CloseExcel

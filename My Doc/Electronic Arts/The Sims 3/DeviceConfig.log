@@ -1,0 +1,122 @@
+=== Application info ===
+Name:            Sims3
+Version:         
+Build:           Release
+=== Rating info ===
+GPU: 1 GPU Memory: 4 CPU: 2 RAM: 4 CPU Speed: 2095 Threading: 3
+Adjusted CPU: 2393 RAM: 4003 Adjusted RAM: 3491 Cores: 2
+=== Machine info ===
+OS version:      Windows Vista 6.0.6000
+OS major ver:    6
+OS minor ver:    0
+CPU:             GenuineIntel
+    Brand:       Intel(R) Core(TM) i3-2310M CPU @ 2.10GHz
+    Family:      6
+    Model:       10
+    Cores:       2
+    HT:          1
+Memory:          4003MB
+Free memory:     1531MB
+User:            dell
+Computer:        ENTER-PHONE
+=== Graphics device info ===
+Number:          0
+Name (driver):   Intel(R) HD Graphics Family
+Name (database): Intel(R) HD Graphics Family [Found: 0, Matched: 1]
+Vendor:          Intel
+Chipset:         Vendor: 8086, Device: 0116, Board: 05031028, Chipset: 0009
+Driver:          aticfx32.dll, Version: 8.17.10.1072, GUID: D7B78E66-4256-11CF-A877-0925B7C2C535
+Driver version:  1072
+Monitor:         \\.\DISPLAY1
+Texture memory:  2816MB
+Vertex program:  3.0
+Pixel program:   3.0
+Hardware TnL:    1
+=== Options ===
+AnimationSmoothing 0
+LightingQuality 1
+Reflections 0
+TextureQuality 1
+VisualEffects 1
+EdgeSmoothing 0
+ObjectHiding 1
+AspectRatio 0
+ForceSquarePixels 1
+SimQuality 1
+TreeQuality 1
+DrawDistance 1
+MaxActiveLots 1
+AdvancedRendering 0
+ResourceCacheBudget 0
+AudioQuality 2
+AudioOutputMode 1
+VoiceLevel 255
+SoundFXLevel 255
+MusicLevel 255
+AmbientLevel 255
+FocusMute 1
+VoiceMute 0
+SoundFXMute 0
+MusicMute 0
+AmbientMute 0
+EdgeScrolling 0
+SimWhileMinimized 0
+TwelveHourClock 1
+ShowPlacementGrid 0
+AutonomyLevel 2
+AgingInterval 2
+EnableAging 1
+EnableStoryProgression 1
+EnableTutorial 1
+EnableIntroTutorial 1
+InvertHorizontalRotation 0
+InvertVerticalRotation 0
+VideoCaptureSize 1
+VideoCaptureQuality 2
+VideoCaptureSound 0
+VideoCaptureTime 60
+VideoCaptureHideUI 1
+=== Default Options ===
+AnimationSmoothing 0
+LightingQuality 1
+Reflections 0
+TextureQuality 1
+VisualEffects 1
+EdgeSmoothing 0
+ObjectHiding 1
+AspectRatio 0
+ForceSquarePixels 1
+SimQuality 1
+TreeQuality 1
+DrawDistance 1
+MaxActiveLots 1
+AdvancedRendering 0
+ResourceCacheBudget 0
+AudioQuality 2
+AudioOutputMode 1
+VoiceLevel 255
+SoundFXLevel 255
+MusicLevel 255
+AmbientLevel 255
+FocusMute 1
+VoiceMute 0
+SoundFXMute 0
+MusicMute 0
+AmbientMute 0
+EdgeScrolling 0
+SimWhileMinimized 0
+TwelveHourClock 1
+ShowPlacementGrid 0
+AutonomyLevel 2
+AgingInterval 2
+EnableAging 1
+EnableStoryProgression 1
+EnableTutorial 1
+EnableIntroTutorial 1
+InvertHorizontalRotation 0
+InvertVerticalRotation 0
+VideoCaptureSize 1
+VideoCaptureQuality 2
+VideoCaptureSound 0
+VideoCaptureTime 60
+VideoCaptureHideUI 1

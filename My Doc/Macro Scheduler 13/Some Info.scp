@@ -1,0 +1,6 @@
+MessageModal>This macro will gather some basic statistics and present them in a Message Box.  This is a useful example of how to use variables.  %CRLF% %CRLF%Press OK to continue.
+GetDate>todays_date
+GetTime>current_time
+MessageModal>Date : %todays_date% %CRLF%Time : %current_time% %CRLF%Operating System : %OS_VER% %CRLF%Windows Directory : %WIN_DIR% %CRLF%System Directory : %SYS_DIR% %CRLF%Username : %USER_NAME% %CRLF%Computer Name : %COMPUTER_NAME% %CRLF%MSched Version: %MSCHED_VER%
+
+

@@ -1,0 +1,73 @@
+// Defragments Drive C:
+// Each version of Windows has a slightly different defragment tool
+// so we need to determine which version of Windows is running
+// and run the appropriate subroutine accordingly. 
+
+// Determine which OS this is ...
+Position>95/98.4.0,OS_VER,1,Is95
+Position>95/98.4.10,OS_VER,1,Is98
+Position>NT.4.0,OS_VER,1,IsNT4
+Position>NT.5.0,OS_VER,1,Is2K
+Position>NT.5.1,OS_VER,1,IsXP
+//2003 Server has same defragger as XP
+Position>NT.5.2,OS_VER,1,IsXP
+
+// Run appropriate subroutine for OS ...
+If>Is95=1,Defrag95
+If>Is98=1,Defrag98
+If>IsNT4=1,DefragNT
+If>Is2K=1,Defrag2K
+If>IsXP=1,DefragXP
+
+// Runs Win95 Defrag tool to completion
+SRT>Defrag95
+   Run Program>defrag c:\
+   WaitWindowOpen>Disk Defragmenter
+   Wait>2
+   Press ALT
+   Send Character/Text>s
+   Release ALT
+   WaitWindowOpen>Disk Defragmenter
+   Wait>2
+   Press Enter
+End>Defrag95
+
+// Runs Win98 Defrag tool to completion
+SRT>Defrag98
+  Run Program>defrag c:\
+  WaitWindowOpen>Disk Defragmenter
+  WaitWindowClosed>Disk Defragmenter
+  WaitWindowOpen>Disk Defragmenter
+  Wait>2
+  SetFocus>Disk Defragmenter
+  Press Enter
+End>Defrag98
+
+// Runs WinXP Defrag tool
+SRT>DefragXP
+  Let>RP_WAIT=1
+  Run>cmd.exe /c defrag c:\
+End>DefragXP
+
+// Runs 2K Defrag tool to completion
+SRT>Defrag2K
+  Let>RP_WAIT=2
+  ExecuteFile>dfrg.msc
+  WaitWindowOpen>Disk Defragmenter
+  Press ALT
+  Send>ad
+  Release ALT
+  WaitWindowOpen>Defragmentation Complete
+  SetFocus>Defragmentation Complete
+  Press Esc
+  Wait>1
+  CloseWindow>Disk Defragmenter
+End>Defrag2K
+
+SRT>DefragNT
+  Let>msg=NT4.0 does not have a defrag tool built-in by default.
+  Let>msg=%msg% You may have a 3rd party defrag tool that I don't know about.
+  MessageModal>msg
+End>DefragNT
+
+

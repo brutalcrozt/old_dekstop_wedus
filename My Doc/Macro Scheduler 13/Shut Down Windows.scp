@@ -1,0 +1,13 @@
+MessageModal>This macro demonstrates how to confirm some action, how to use basic logic, and how to send keystrokes. If you continue with the macro Windows will shut down, so make sure you've saved anything you were working on first!
+Ask>Are you sure you want to shut down your PC ?,confirm
+If>confirm=NO,end
+Press CTRL
+Press Esc
+Release CTRL
+Wait>1
+Send Character/Text>u
+Wait>1
+Send Character/Text>s
+Wait>1
+Send Character/Text>y
+Label>end

@@ -1,0 +1,112 @@
+
+1.Ketika lemparan jauh sewaktu Bola out.
+tekan L2 + R2 +(A,A,K,SE,L)
+
+
+2.Untuk cheat Wasit Sabar pencet cheatnya
+ketika Loding kick off
+R2,R1,L2.L1,SEL
+
+
+3.fungsi cheat Supporter lebih banyak
+waktu untuk menekan cheat Loading kick off
+A,A,A,R1,R1,L2,SE,L,L,L
+
+
+4.fungsi cheat Vitalitas nambah
+waktu menekannya Loding formasi
+SEL3x,K,K,SI,R2,R1,L2,L1,SE,Ll,K,SI
+
+
+5.cheat Semangat tinggi
+waktu Loding kick off
+Ll2,L1,K,K,SE,SE,Ll,L
+
+
+6.Lari lebih cepat
+Bawa bola
+L,K,SI,R1,R2,L2,Ll,Ll,SI
+
+
+7.Tendangan keras
+Bola mati
+K,K,K,K,K,L,K,L,K,L,K,L,L
+
+
+8.Cidera dan sembuh
+Pemain keluar
+L2+L1,SE,L,SE,L,SE
+
+
+9.Akurasi plus
+Loding formasi
+K,A,K,A,K,A,K,A
+
+
+10.Tackling maut
+Bola mati
+SEL,A,L,A,L
+
+
+11.Wasit buta
+Loading kick off
+KI,K,KA,KI,K,KA,KI,K,KA
+
+
+12.GK lemah
+Loding kick off
+SEL+L1,KA,KA,KA,KA,SE,SE
+
+
+13.Bola berat
+Bola mati
+SEL+A,B,K,K,L,A,A
+
+
+14.Blank layar
+Loading free kick
+90%
+R1+L1
+
+
+15.Heading kuat
+Pas lagi corner
+K,A,SEL+SE,K,K,SE
+
+
+16.Tendangan gledek
+Bawa bola
+R2+K,K,K,A,A,RI,LI,K,K
+
+
+17.Icon fress
+Loading formasi
+R2+SE
+
+
+18.No penalty
+pas lagi loading freekick
+A,A,A,B,K,L,SEL
+
+
+19.Tendangan kipper gol
+Free kick
+K,A,SI
+
+
+20. Banana shot corner kick
+Harus Pake Beckham, Del Piero, Pirlo, CR7, Xavi, Gerard, Lampard.
+
+
+Keterangan :
+SI : Silang
+SE : Segitiga
+K ; Kotak
+L : lingkaran
+SEL : selec
+A : atas
+B : bawahA
+KI : kiri
+KA : kanan
+Koma (,) : tekan tombol bergantian
+Plus (+) : tekan tombol bersamaan

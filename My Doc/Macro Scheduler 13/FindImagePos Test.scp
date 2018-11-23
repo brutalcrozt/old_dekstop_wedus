@@ -1,0 +1,46 @@
+/*
+
+This macro demonstrates the speed of the FindImagePos command.  
+
+Run it and browse for a bitmap file previously created with the Image Capture tool which is
+currently showing on the screen.  Hit Find and the image will be found, the mouse will move
+to it's location and a message box will be displayed showing elapsed time in seconds. 
+
+View a Tutorial on How to Use Image Recognition:
+http://www.mjtnet.com/blog/2007/02/20/how-to-use-image-recognition/
+
+*/
+
+VBSTART
+VBEND
+
+Dialog>Dialog1
+   Caption=Dialog1
+   Width=384
+   Height=257
+   Top=458
+   Left=358
+   Edit=msEdit1,16,72,249,
+   Label=BMP File:,16,56,true
+   Button=Browse,280,72,75,25,0
+   Label=Browse for a BMP captured with the image capture tool,16,16,true
+   Button=Find,280,128,75,25,10
+   Edit=msEdit2,16,128,121,0
+   Label=Color Tolerance:,16,112,true
+   Label=BMPs must be created with the Image Capture Tool%CRLF% (Editor/Tools/Image Capture Tool),16,176,true
+   FileBrowse=Browse,msEdit1
+EndDialog>Dialog1
+
+Show>Dialog1,r
+
+If>r=10
+  VBEval>Timer,startTime
+  FindImagePos>Dialog1.msEdit1,SCREEN,Dialog1.msEdit2,1,X,Y,n
+  If>n>0
+    MouseMove>X_0,Y_0
+  Endif
+  VBEval>Timer-%startTime%,Elapsed
+  MessageModal>Seconds Elapsed: %Elapsed%
+Endif
+
+

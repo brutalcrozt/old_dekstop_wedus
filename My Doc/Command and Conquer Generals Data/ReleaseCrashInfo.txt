@@ -1,0 +1,28 @@
+Release Crash at Sun Feb 12 22:07:59 2012
+; Reason Uncaught Exception in GameEngine::update
+
+Last error:
+Exception is access violation
+WinMain at 4017f0
+Error code: EXCEPTION_ACCESS_VIOLATION
+Description: The thread tried to read from or write to a virtual address for which it does not have the appropriate access.
+Access address:00000034 was read from.
+
+Stack Dump:
+  <Unknown>(-1) : <Unknown> 0x00598F63
+  <Unknown>(-1) : <Unknown> 0x02DB0C2C
+
+Details:
+Register dump...
+Eip:00598F63	Esp:0018F7E4	Ebp:02DB0CDC
+Eax:0000002C	Ebx:763BDB5B	Ecx:00000000
+Edx:00B248E4	Esi:00000000	Edi:009174D1
+EFlags:00010246 
+CS:0023  SS:002b  DS:002b  ES:002b  FS:0053  GS:002b
+EIP bytes dump...
+
+Bytes at CS:EIP (00598F63)  : 8B 48 08 74 05 83 C9 04 EB 03 83 E1 FB 6A 00 89 48 08 A1 70 22 96 00 8B 38 56 68 08 40 00 00 8B 
+
+
+Current stack:
+  <Unknown>(-1) : <Unknown> 0x77E09F15

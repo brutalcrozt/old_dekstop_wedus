@@ -1,0 +1,25 @@
+//Initialise VBScript
+VBSTART
+VBEND
+Let>msg=This example retrieves the results of a google query directly using the HTTP protocol.
+Let>msg=%msg%%CRLF%For yet more ways to GET and POST HTTP see: %CRLF%
+Let>msg=%msg%http://www.mjtnet.com/usergroup/viewtopic.php?t=1655
+MessageModal>msg
+
+//Ask user for a search query
+Let>INPUT_BROWSE=0
+Input>query,Enter a search term:
+
+//URL Encode the query
+StringReplace>query,","",query
+VBEval>Escape("%query%"),query
+
+//Perform the HTTP request
+HTTPRequest>http://www.google.com/search?q=%query%&hl=en,,GET,,response
+
+//Output results
+MessageModal>The next message box contains the HTML of the response.
+MessageModal>response
+
+
+

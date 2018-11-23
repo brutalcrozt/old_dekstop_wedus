@@ -1,0 +1,121 @@
+//A Simple Calculator
+//An example of a non-modal dialog and some basic maths and logic
+
+//Dialog Specification, to view in the designer select the next line,
+//then right click and select 'Edit Calculator'
+Dialog>Calculator
+   Caption=Calculator
+   Top=182
+   Width=180
+   Left=61
+   Height=224
+   Label=Enter an expression:,8,8
+   Edit=expression,8,32,153,expr
+   Button=&9,72,64,25,25,19
+   Button=&8,40,64,25,25,18
+   Button=&7,8,64,25,25,17
+   Button=&6,72,96,25,25,16
+   Button=&5,40,96,25,25,15
+   Button=&4,8,96,25,25,14
+   Button=&3,72,128,25,25,13
+   Button=&2,40,128,25,25,12
+   Button=&1,8,128,25,25,11
+   Button=&0,8,160,25,25,10
+   Button=&+,104,160,25,25,20
+   Button=&-,104,128,25,25,21
+   Button=&/,104,64,25,25,22
+   Button=&*,104,96,25,25,23
+   Button=&=,136,160,25,25,30
+   Button=&+/-,40,160,25,25,40
+   Button=.,72,160,25,25,41
+   Button=1/x,136,128,25,25,42
+   Button=sqrt,136,96,25,25,44
+   Button=C,136,64,25,25,50
+EndDialog>Calculator
+
+//Initialise and Show the calculator
+Let>expr=
+Show>Calculator
+
+//in the action loop we check to see which button is pressed and act accordingly
+Label>ActionLoop
+		GetDialogAction>Calculator,r
+		If>{(%r%>9) and (%r%<20)}
+			 //A numeric key was pressed, add it to the expression
+			 Let>tr=r-10
+		  	 Let>expr=%expr%%tr%
+			 Let>Calculator.expression=expr
+			 ResetDialogAction>Calculator
+		endif
+		If>r=20
+		  //the plus key was pressed
+		  Let>expr=%expr%+
+		  Let>Calculator.expression=expr
+		  ResetDialogAction>Calculator
+		Endif
+		If>r=21
+		  //the minus key was pressed
+		  Let>expr=%expr%-
+		  Let>Calculator.expression=expr
+		  ResetDialogAction>Calculator
+		Endif
+		If>r=22
+		  //the divide key was pressed
+		  Let>expr=%expr%/
+		  Let>Calculator.expression=expr
+		  ResetDialogAction>Calculator
+		Endif
+		If>r=23
+		  //the multiply key was pressed
+		  Let>expr=%expr%*
+		  Let>Calculator.expression=expr
+		  ResetDialogAction>Calculator
+		Endif
+		If>r=50
+		  //the cancel key was pressed, reinitialise
+		  Let>expr=
+		  Let>Calculator.expression=expr
+		  ResetDialogAction>Calculator
+		Endif
+		If>r=40
+		  //the +/- sign was pressed
+		  Let>expr={expr}
+		  Let>expr=0-expr
+		  Let>Calculator.expression=expr
+		  ResetDialogAction>Calculator
+		Endif
+		If>r=41
+		  //the decimal key was pressed
+		  Let>expr=%expr%.
+		  Let>Calculator.expression=expr
+		  ResetDialogAction>Calculator
+		Endif
+		if>r=42
+		  //the 1/x key was pressed
+		  Let>expr={expr}
+		  Let>expr=1/%expr%
+		  Let>Calculator.expression=expr
+		  ResetDialogAction>Calculator
+		Endif
+		if>r=44
+		  //the sqrt key was pressed
+		  Let>expr={expr}
+		  Let>expr={sqrt(%expr%)}
+		  Let>Calculator.expression=expr
+		  ResetDialogAction>Calculator
+		Endif
+		//Calculate Answer by evaluating expr
+		If>{(%r%=30) AND (%expr% <> "")}
+		  //the equals key was pressed, calculate the answer
+		  Let>expr={Calculator.expression}
+		  Let>Calculator.expression=expr
+		  ResetDialogAction>Calculator
+		Endif
+		//if window is closed, exit out
+		if>r=2,exit
+		Wait>0.2
+Goto>ActionLoop
+Label>exit
+
+
+
